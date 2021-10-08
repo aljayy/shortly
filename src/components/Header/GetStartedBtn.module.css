@@ -1,0 +1,11 @@
+button {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 3rem;
+  color: white;
+  display: block;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  font-family: "Poppins", sans-serif;
+}

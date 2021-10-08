@@ -1,0 +1,26 @@
+header {
+  height: 100vh;
+  padding-top: 4rem;
+}
+
+.header-img {
+  margin-top: 3rem;
+  width: 150%;
+}
+
+.shortly-description {
+  margin: 4.5rem 2.5rem 3rem;
+  text-align: center;
+}
+
+.shortly-description h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.shortly-description p {
+  font-size: 1.7rem;
+  color: hsl(0, 0%, 75%);
+}
