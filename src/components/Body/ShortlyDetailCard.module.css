@@ -11,6 +11,7 @@
   padding: 8rem 3.5rem 4.5rem 3.5rem;
   position: relative;
   text-align: center;
+  z-index: 10;
 }
 
 .card h2 {
@@ -19,7 +20,6 @@
 }
 
 .card p {
-  /* color: hsl(0, 0%, 75%); */
   color: hsl(257, 7%, 63%);
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -33,4 +33,11 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.line {
+  height: 0.8rem;
+  background-color: hsl(180, 66%, 49%);
+  overflow: hidden;
+  transform: rotate(90deg);
 }

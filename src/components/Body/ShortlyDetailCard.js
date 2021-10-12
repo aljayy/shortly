@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import recognition from "../../images/icon-brand-recognition.svg";
 import records from "../../images/icon-detailed-records.svg";
@@ -25,19 +25,40 @@ function ShortlyDetailCard(props) {
     },
   ];
 
-  return cardDetails.map((item) => {
-    return (
-      <div className={styles.container}>
-        <div className={styles.card}>
-          <div className={styles["img-bg"]}>
-            <img src={item.img} alt="" />
-          </div>
-          <h2>{item.title}</h2>
-          <p>{item.description}</p>
-        </div>
-      </div>
-    );
-  });
+  return (
+    <div className={styles.container}>
+      {cardDetails.map((item) => {
+        if (item !== cardDetails[2]) {
+          return (
+            <Fragment>
+              <div className={styles["inner-container"]}>
+                <div className={styles.card}>
+                  <div className={styles["img-bg"]}>
+                    <img src={item.img} alt="" />
+                  </div>
+                  <h2>{item.title}</h2>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+              <div className={styles.line}></div>
+            </Fragment>
+          );
+        } else {
+          return (
+            <div className={styles["inner-container"]}>
+              <div className={styles.card}>
+                <div className={styles["img-bg"]}>
+                  <img src={item.img} alt="" />
+                </div>
+                <h2>{item.title}</h2>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          );
+        }
+      })}
+    </div>
+  );
 }
 
 export default ShortlyDetailCard;

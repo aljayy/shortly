@@ -3,6 +3,9 @@ header {
   padding-top: 4rem;
 }
 
+.img {
+  overflow: hidden;
+}
 .header-img {
   margin-top: 3rem;
   width: 150%;

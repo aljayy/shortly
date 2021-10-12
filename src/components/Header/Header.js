@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <Menu />
-      <div>
+      <div className={styles.img}>
         <img src={computerImage} alt="" className={styles["header-img"]} />
       </div>
       <div className={styles["shortly-description"]}>
