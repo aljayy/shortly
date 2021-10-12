@@ -1,0 +1,18 @@
+.footer {
+  background-color: hsl(260, 8%, 14%);
+  padding-top: 5rem;
+}
+
+.footer img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1.3rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}

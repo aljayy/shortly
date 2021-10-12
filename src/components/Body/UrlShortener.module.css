@@ -1,0 +1,35 @@
+.bg-gray {
+  background: linear-gradient(to top, rgba(240, 241, 246) 50%, white 50% 100%);
+}
+
+.url-input {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../../images/bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 1.5rem;
+  margin: 8rem 2.5rem 0;
+  padding: 2.5rem;
+}
+
+.url-input input {
+  border-radius: 0.5rem;
+  border: none;
+  height: 4.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  width: 100%;
+}
+
+.url-input input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: hsl(0, 0%, 75%);
+}
+
+.submit {
+  border-radius: 0.5rem;
+
+  width: 100%;
+  padding: 1.5rem 0;
+}
