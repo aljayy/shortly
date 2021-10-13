@@ -8,6 +8,7 @@ function UrlShortener() {
       <div className={styles["url-input"]}>
         <form>
           <input placeholder="Shorten a link here..."></input>
+          <p className={styles.error}>Please add a link!</p>
           <button className={styles.submit}>Shorten It!</button>
         </form>
       </div>

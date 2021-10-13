@@ -3,11 +3,11 @@ import logo from "../../images/logo.svg";
 
 import styles from "./Menu.module.css";
 
-function Menu() {
+function Menu(props) {
   return (
     <div className={styles.menu}>
       <img src={logo} alt="logo" />
-      <div className={styles["hamburger-menu"]}>
+      <div className={styles["hamburger-menu"]} onClick={props.onDisplayMenu}>
         <div></div>
         <div></div>
         <div></div>

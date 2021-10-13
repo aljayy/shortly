@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Menu from "./Menu";
 import computerImage from "../../images/illustration-working.svg";
 import styles from "./Header.module.css";
 import GetStartedBtn from "./GetStartedBtn";
+import OverlayMenu from "./OverlayMenu";
 
 function Header() {
+  const [viewMenu, setViewMenu] = useState(false);
+
+  function displayMenu() {
+    setViewMenu((prevMenu) => {
+      return !prevMenu;
+    });
+  }
+
   return (
     <header>
-      <Menu />
+      <Menu onDisplayMenu={displayMenu} />
+      <OverlayMenu showMenu={viewMenu} onDisplayMenu={displayMenu} />
       <div className={styles.img}>
         <img src={computerImage} alt="" className={styles["header-img"]} />
       </div>
