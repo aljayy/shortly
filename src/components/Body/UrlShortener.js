@@ -51,6 +51,7 @@ function UrlShortener(props) {
     ];
     console.log(loadedData);
     props.onLinksHandler(loadedData);
+    inputRef.current.value = "";
   }
 
   return (

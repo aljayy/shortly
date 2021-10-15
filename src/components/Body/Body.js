@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import UrlShortener from "./UrlShortener";
 
 import styles from "./Body.module.css";
@@ -16,7 +16,16 @@ function Body() {
     });
   }
 
-  console.log(newLinks);
+  useEffect(() => {
+    const data = localStorage.getItem("saved-links");
+    if (data) {
+      setNewLinks(JSON.parse(data));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("saved-links", JSON.stringify(newLinks));
+  });
 
   return (
     <div className={styles["body-container"]}>
