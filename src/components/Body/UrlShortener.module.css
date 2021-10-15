@@ -1,3 +1,9 @@
+.error {
+  color: hsl(0, 87%, 67%);
+  font-style: italic;
+  margin-top: 0.5rem;
+  /* display: none; */
+}
 .bg-gray {
   background: linear-gradient(to top, rgba(240, 241, 246) 50%, white 50% 100%);
 }
@@ -21,13 +27,6 @@
   /* border: 3px solid hsl(0, 87%, 67%); */
 }
 
-.error {
-  color: hsl(0, 87%, 67%);
-  font-style: italic;
-  margin-top: 0.5rem;
-  /* display: none; */
-}
-
 .url-input input::placeholder {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -39,4 +38,17 @@
   margin-top: 1.5rem;
   width: 100%;
   padding: 1.5rem 0;
+}
+
+/* Conditional Styles */
+.display {
+  display: none;
+}
+
+.placeholder input {
+  outline-color: hsl(0, 87%, 67%);
+}
+
+.placeholder input::placeholder {
+  color: hsl(0, 87%, 67%);
 }

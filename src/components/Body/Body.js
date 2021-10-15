@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import UrlShortener from "./UrlShortener";
 
 import styles from "./Body.module.css";
 import ShortlyDetailCard from "./ShortlyDetailCard";
 
 import GetStartedBtn from "../Header/GetStartedBtn";
+import ShortenedLinks from "./ShortenedLinks";
 
 function Body() {
+  const [newLinks, setNewLinks] = useState([]);
+
+  function updateLinks(data) {
+    setNewLinks((prevLinks) => {
+      return [...data, ...prevLinks];
+    });
+  }
+
+  console.log(newLinks);
+
   return (
     <div className={styles["body-container"]}>
-      <UrlShortener />
+      <UrlShortener onLinksHandler={updateLinks} />
+      <ShortenedLinks links={newLinks} />
       <div className={styles.advanced}>
         <h2>Advanced Statistics</h2>
         <p>

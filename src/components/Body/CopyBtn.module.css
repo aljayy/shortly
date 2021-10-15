@@ -1,0 +1,12 @@
+.copy {
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.copied {
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+}
