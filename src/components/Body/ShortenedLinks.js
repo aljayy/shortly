@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 
 import CopyBtn from "./CopyBtn";
 
@@ -15,6 +15,7 @@ function ShortenedLinks(props) {
   function changeColor() {
     setChangeCopyBtn(true);
   }
+
   return (
     <Fragment>
       {props.links.map((item) => {

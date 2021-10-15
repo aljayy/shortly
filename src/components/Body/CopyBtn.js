@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
 import styles from "./CopyBtn.module.css";
 
@@ -8,6 +8,7 @@ function CopyBtn(props) {
   function changeColor() {
     setChangeCopyBtn(true);
   }
+
   return (
     <CopyToClipboard text={props.text}>
       <button

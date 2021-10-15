@@ -1,7 +1,9 @@
 .error {
   color: hsl(0, 87%, 67%);
   font-style: italic;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
+  padding: 0;
   /* display: none; */
 }
 .bg-gray {

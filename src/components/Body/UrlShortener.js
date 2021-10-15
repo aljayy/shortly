@@ -24,7 +24,7 @@ function UrlShortener(props) {
 
   async function shortenLink() {
     console.log("SHORTEN FUNCTION");
-    if (error) return;
+    if (inputRef.current.value.length < 1) return;
 
     const link = inputRef.current.value;
     const response = await fetch(
