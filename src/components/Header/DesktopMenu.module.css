@@ -1,0 +1,59 @@
+.menu {
+  display: flex;
+  padding: 0 16.5rem;
+}
+
+.links {
+  margin: auto 0;
+  margin-left: 4.5rem;
+  padding-bottom: 1rem;
+}
+
+.desktop-ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.desktop-ul li {
+  list-style: none;
+}
+.desktop-ul li a {
+  color: hsl(0, 0%, 75%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: black;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  background-color: transparent;
+  color: hsl(0, 0%, 75%);
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+}
+
+.signup {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+
+.signup:hover {
+  background-color: hsl(180, 66%, 80%);
+}

@@ -26,26 +26,16 @@ function ShortlyDetailCard(props) {
   ];
 
   return (
-    <div className={styles.container}>
-      {cardDetails.map((item) => {
-        if (item !== cardDetails[2]) {
+    <Fragment>
+      <div className={styles.line}></div>
+      <div className={styles.container}>
+        {cardDetails.map((item) => {
           return (
-            <Fragment>
-              <div className={styles["inner-container"]}>
-                <div className={styles.card}>
-                  <div className={styles["img-bg"]}>
-                    <img src={item.img} alt="" />
-                  </div>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-              <div className={styles.line}></div>
-            </Fragment>
-          );
-        } else {
-          return (
-            <div className={styles["inner-container"]}>
+            <div
+              className={`${styles["inner-container"]} ${
+                item === cardDetails[1] ? styles["second-child"] : ""
+              } ${item === cardDetails[2] ? styles["third-child"] : ""}`}
+            >
               <div className={styles.card}>
                 <div className={styles["img-bg"]}>
                   <img src={item.img} alt="" />
@@ -55,9 +45,9 @@ function ShortlyDetailCard(props) {
               </div>
             </div>
           );
-        }
-      })}
-    </div>
+        })}
+      </div>
+    </Fragment>
   );
 }
 

@@ -15,3 +15,18 @@
   line-height: 3.5rem;
   text-decoration: none;
 }
+
+@media (min-width: 1440px) {
+  .container {
+    text-align: left;
+    margin: 0;
+  }
+
+  .container li {
+    list-style: none;
+  }
+
+  .container li a:hover {
+    color: hsl(180, 66%, 49%);
+  }
+}

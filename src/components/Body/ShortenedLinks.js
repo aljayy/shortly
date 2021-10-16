@@ -28,9 +28,15 @@ function ShortenedLinks(props) {
               key={item.key}
             >
               <p className={styles["original-link"]}>{item.originalLink}</p>
-              <p className={styles["shortened-link"]}>{item.shortLink}</p>
-              <div className={styles["button-container"]}>
-                <CopyBtn onChangeColor={changeColor} text={item.shortLink} />
+              <div className={styles["desktop-container"]}>
+                <p className={styles["shortened-link"]}>{item.shortLink}</p>
+                <div className={styles["button-container"]}>
+                  <CopyBtn
+                    onChangeColor={changeColor}
+                    text={item.shortLink}
+                    class={styles.btn}
+                  />
+                </div>
               </div>
             </div>
           </Fragment>

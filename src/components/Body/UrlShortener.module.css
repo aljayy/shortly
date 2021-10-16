@@ -4,8 +4,8 @@
   font-size: 1.2rem;
   margin-top: 0.5rem;
   padding: 0;
-  /* display: none; */
 }
+
 .bg-gray {
   background: linear-gradient(to top, rgba(240, 241, 246) 50%, white 50% 100%);
 }
@@ -53,4 +53,33 @@
 
 .placeholder input::placeholder {
   color: hsl(0, 87%, 67%);
+}
+
+@media (min-width: 1440px) {
+  .url-input {
+    margin: 0 16.5rem;
+    padding: 5rem 6rem;
+  }
+
+  .url-input form {
+    display: grid;
+    grid-template-columns: 77rem 18.5rem;
+    column-gap: 2.5rem;
+    grid-template-rows: 6rem;
+  }
+
+  .url-input form div {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .url-input form div input {
+    height: 100%;
+  }
+
+  .url-input form .submit {
+    grid-column-start: 2;
+    margin: 0;
+    padding: 0;
+  }
 }

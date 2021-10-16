@@ -16,3 +16,26 @@
   margin-top: 5rem;
   padding-bottom: 5rem;
 }
+
+@media (min-width: 1440px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 7rem 16.5rem;
+  }
+
+  .footer img {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
+    justify-self: flex-start;
+  }
+
+  .social {
+    margin: 0;
+  }
+
+  .social img {
+    cursor: pointer;
+  }
+}

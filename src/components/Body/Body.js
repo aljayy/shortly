@@ -41,7 +41,7 @@ function Body() {
       <ShortlyDetailCard />
       <div className={styles.boost}>
         <h2>Boost your links today</h2>
-        <GetStartedBtn />
+        <GetStartedBtn className={styles["boost-btn"]} />
       </div>
     </div>
   );

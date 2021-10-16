@@ -60,10 +60,12 @@ function UrlShortener(props) {
         className={`${styles["url-input"]} ${error ? styles.placeholder : ""}`}
       >
         <form onSubmit={preventDefault}>
-          <input placeholder="Shorten a link here..." ref={inputRef}></input>
-          <p className={`${styles.error} ${!error ? styles.display : ""}`}>
-            Please add a link!
-          </p>
+          <div>
+            <input placeholder="Shorten a link here..." ref={inputRef}></input>
+            <p className={`${styles.error} ${!error ? styles.display : ""}`}>
+              Please add a link!
+            </p>
+          </div>
           <button className={styles.submit} onClick={callFunctions}>
             Shorten It!
           </button>
