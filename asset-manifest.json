@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/shortly/static/css/main.445b25ac.chunk.css",
-    "main.js": "/shortly/static/js/main.80377d18.chunk.js",
-    "main.js.map": "/shortly/static/js/main.80377d18.chunk.js.map",
+    "main.css": "/shortly/static/css/main.26e68e63.chunk.css",
+    "main.js": "/shortly/static/js/main.d7db34c8.chunk.js",
+    "main.js.map": "/shortly/static/js/main.d7db34c8.chunk.js.map",
     "runtime-main.js": "/shortly/static/js/runtime-main.d3597a7b.js",
     "runtime-main.js.map": "/shortly/static/js/runtime-main.d3597a7b.js.map",
     "static/js/2.6ed40838.chunk.js": "/shortly/static/js/2.6ed40838.chunk.js",
     "static/js/2.6ed40838.chunk.js.map": "/shortly/static/js/2.6ed40838.chunk.js.map",
     "index.html": "/shortly/index.html",
-    "static/css/main.445b25ac.chunk.css.map": "/shortly/static/css/main.445b25ac.chunk.css.map",
+    "static/css/main.26e68e63.chunk.css.map": "/shortly/static/css/main.26e68e63.chunk.css.map",
     "static/js/2.6ed40838.chunk.js.LICENSE.txt": "/shortly/static/js/2.6ed40838.chunk.js.LICENSE.txt",
     "static/media/Body.module.css": "/shortly/static/media/bg-boost-mobile.4b04bd89.svg",
     "static/media/UrlShortener.module.css": "/shortly/static/media/bg-shorten-mobile.41c34b33.svg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.d3597a7b.js",
     "static/js/2.6ed40838.chunk.js",
-    "static/css/main.445b25ac.chunk.css",
-    "static/js/main.80377d18.chunk.js"
+    "static/css/main.26e68e63.chunk.css",
+    "static/js/main.d7db34c8.chunk.js"
   ]
 }
