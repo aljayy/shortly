@@ -9,7 +9,7 @@ import FooterLinks from "./FooterLinks";
 
 function Footer() {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <img src={whitelogo} alt="Our Logo" />
       <FooterLinks />
       <div className={styles.social}>
@@ -26,7 +26,7 @@ function Footer() {
           <img src={instagram} alt="Our Instagram Page" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -54,6 +54,11 @@
   }
 
   .boost-btn {
+    cursor: pointer;
     padding: 1rem 4rem;
+  }
+
+  .boost-btn:hover {
+    background-color: hsl(180, 66%, 80%);
   }
 }

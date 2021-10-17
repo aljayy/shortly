@@ -57,6 +57,8 @@
 
 @media (min-width: 1440px) {
   .url-input {
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-position: center;
     margin: 0 16.5rem;
     padding: 5rem 6rem;
   }
@@ -81,5 +83,13 @@
     grid-column-start: 2;
     margin: 0;
     padding: 0;
+  }
+
+  .submit {
+    cursor: pointer;
+  }
+
+  .submit:hover {
+    background-color: hsl(180, 66%, 80%);
   }
 }

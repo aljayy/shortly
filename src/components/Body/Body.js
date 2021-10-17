@@ -28,7 +28,7 @@ function Body() {
   });
 
   return (
-    <div className={styles["body-container"]}>
+    <body className={styles["body-container"]}>
       <UrlShortener onLinksHandler={updateLinks} />
       <ShortenedLinks links={newLinks} />
       <div className={styles.advanced}>
@@ -43,7 +43,7 @@ function Body() {
         <h2>Boost your links today</h2>
         <GetStartedBtn className={styles["boost-btn"]} />
       </div>
-    </div>
+    </body>
   );
 }
 

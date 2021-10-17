@@ -56,6 +56,11 @@ p {
   }
 
   .btn {
+    cursor: pointer;
     width: 10rem;
+  }
+
+  .btn:hover {
+    background-color: hsl(180, 66%, 80%);
   }
 }
