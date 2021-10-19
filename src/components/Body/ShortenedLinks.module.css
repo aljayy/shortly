@@ -63,4 +63,13 @@ p {
   .btn:hover {
     background-color: hsl(180, 66%, 80%);
   }
+
+  .btn-copied {
+    cursor: pointer;
+    width: 10rem;
+  }
+
+  .btn-copied:hover {
+    background-color: hsl(257, 27%, 40%);
+  }
 }

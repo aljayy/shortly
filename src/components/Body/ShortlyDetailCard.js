@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import useMediaQuery from "react-responsive";
 
 import recognition from "../../images/icon-brand-recognition.svg";
 import records from "../../images/icon-detailed-records.svg";
@@ -7,6 +8,8 @@ import customize from "../../images/icon-fully-customizable.svg";
 import styles from "./ShortlyDetailCard.module.css";
 
 function ShortlyDetailCard(props) {
+  const laptop = useMediaQuery({ query: "(min-width: 1440px)" });
+  const mobile = useMediaQuery({ query: "(min-width: 375px " });
   const cardDetails = [
     {
       img: recognition,
@@ -26,8 +29,9 @@ function ShortlyDetailCard(props) {
   ];
 
   return (
-    <Fragment>
+    <div className={styles["outter-container"]}>
       <div className={styles.line}></div>
+
       <div className={styles.container}>
         {cardDetails.map((item) => {
           return (
@@ -47,7 +51,7 @@ function ShortlyDetailCard(props) {
           );
         })}
       </div>
-    </Fragment>
+    </div>
   );
 }
 

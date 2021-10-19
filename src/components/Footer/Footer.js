@@ -14,7 +14,11 @@ function Footer() {
       <FooterLinks />
       <div className={styles.social}>
         <div>
-          <img src={facebook} alt="Our Facebook Page" />
+          <img
+            src={facebook}
+            alt="Our Facebook Page"
+            className={styles.facebook}
+          />
         </div>
         <div>
           <img src={twitter} alt="Our Twitter Page" />

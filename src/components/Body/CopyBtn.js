@@ -13,7 +13,7 @@ function CopyBtn(props) {
     <CopyToClipboard text={props.text}>
       <button
         className={`${styles.copy} ${changeCopyBtn ? styles.copied : ""} ${
-          props.class
+          !changeCopyBtn ? props.btnClass : props.btnCopyClass
         }`}
         onClick={changeColor}
       >

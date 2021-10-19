@@ -34,7 +34,8 @@ function ShortenedLinks(props) {
                   <CopyBtn
                     onChangeColor={changeColor}
                     text={item.shortLink}
-                    class={styles.btn}
+                    btnClass={styles.btn}
+                    btnCopyClass={styles["btn-copied"]}
                   />
                 </div>
               </div>

@@ -34,8 +34,12 @@
 }
 
 @media (min-width: 1440px) {
+  .advanced {
+    padding-top: 12rem;
+  }
   .advanced h2 {
     font-size: 4rem;
+    margin: 0;
   }
 
   .advanced p {
